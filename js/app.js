@@ -17,7 +17,18 @@ $(document).ready(function ()
   var svgHeight = '400';
   var svgWidth = '800';
   var frequencyData = new Uint8Array(parseInt(svgWidth));
-
+  var svg = createSvg('#song', svgHeight, svgWidth);
+  
+  $('#play').on('click', function()
+  {
+    $('#song').show();
+  });
+  
+  $('#pause').on('click', function()
+  {
+    $('#song').hide();
+  });
+  
   $('#picker').on('click', function()
   {
       $("#audioElement").attr("src", $('#song_pick').val()).trigger("play");
@@ -29,9 +40,7 @@ $(document).ready(function ()
   {
     return d3.select(parent).append('svg').attr('height', height).attr('width', width);
   }
-
-  var svg = createSvg('#song', svgHeight, svgWidth);
-
+  
   svg.selectAll('line').data(frequencyData).enter().append('line');
 
   function renderChart()
