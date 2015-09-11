@@ -1,5 +1,6 @@
 $(document).ready(function ()
 {
+  $('#song').hide();
   var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   var audioElement = document.getElementById('audioElement');
   var audioSrc = audioCtx.createMediaElementSource(audioElement);
@@ -17,7 +18,9 @@ $(document).ready(function ()
   var svgHeight = '400';
   var svgWidth = '800';
   var frequencyData = new Uint8Array(parseInt(svgWidth));
+  $('#song').show();
   var svg = createSvg('#song', svgHeight, svgWidth);
+  $('#song').hide();
   
   $('#play').on('click', function()
   {
