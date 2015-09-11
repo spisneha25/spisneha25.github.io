@@ -14,8 +14,8 @@ $(document).ready(function ()
   //var frequencyData = new Uint8Array(analyser.frequencyBinCount);
   //var frequencyData = new Array(200);
 
-  var svgHeight = '800';
-  var svgWidth = '1200';
+  var svgHeight = '600';
+  var svgWidth = '800';
   var frequencyData = new Uint8Array(parseInt(svgWidth));
 
   $('#picker').on('click', function()

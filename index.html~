@@ -208,7 +208,7 @@
       		</div>
       	    </div>
       	    <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 text-center">
   			<p> A simple visualizer written in D3 that reminds you of Winamp player! Beware, I don't own any of these songs, just know all of them! </p>
       			<audio id="audioElement" src="./audio/You_Me.mp3"></audio>
 			<select id="song_pick">
