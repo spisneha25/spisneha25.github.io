@@ -94,6 +94,23 @@
                 </div>
             </div>
             <div class="row">
+            	<div class="col-lg-12 text-center">
+  			<p> Listen to some of my favorite songs combined with a simple visualizer written in D3 that reminds you of Winamp player! Beware, I don't own any of these songs, just know all of them! </p>
+      			<audio id="audioElement" src="./audio/You_Me.mp3"></audio>
+			<select id="song_pick">
+				<option value="./audio/You_Me.mp3"> Bassnectar - You and Me </option>
+				<option value="./audio/Cool_Kids.mp3"> Echosmith - Cool Kids   </option>
+				<option value="./audio/Illusion.mp3"> Zedd - Illusion </option>
+				<option value="./audio/Unsatisfied.mp3"> Nine Black Alps - Unsatisfied </option>
+				<option value="./audio/Touch.mp3"> Troye Sivan - Touch </option>
+			</select>
+			<button id="picker"> Pick </button>
+			<div>
+				<button onclick="document.getElementById('audioElement').play()">Play</button>
+				<button onclick="document.getElementById('audioElement').pause()">Pause</button>
+			</div>
+			<div class="hide" id="song"></div>
+      		</div>
                 <div class="col-md-12 portfolio-item">
                     <img class="img-responsive" src="img/aboutme_t.png" alt="">
                 </div>
@@ -158,7 +175,7 @@
 						<br/>
 						<h3> Resume: </h3>
 						<p class="skills">
-							Here's my <a target="_blank" href="resume/resume.pdf">resume</a> for more details regarding my experiences and projects.
+							Here's my <a target="_blank" href="resume.pdf">resume</a> for more details regarding my experiences and projects.
 						</p>
 					</p>
                 </div>
@@ -188,42 +205,6 @@
       			Almost all of my open source code is hosted on <a href="https://github.com/spisneha25">github</a>. 
       			It is a simple collection of repositories, but it does have a few interesting code snippets here and there. 
       			</p>
-      		</div>
-      	    </div>
-       </div>
-    </section>
-
-    <!-- D3 Section -->
-    <section id="code">
-    	<div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Music Viz</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-    		<div class="col-lg-12 text-center">
-      		<p><i> "When words fail, music speaks..." </i></p>
-      		</div>
-      	    </div>
-      	    <div class="row">
-                <div class="col-lg-12 text-center">
-  			<p> A simple visualizer written in D3 that reminds you of Winamp player! Beware, I don't own any of these songs, just know all of them! </p>
-      			<audio id="audioElement" src="./audio/You_Me.mp3"></audio>
-			<select id="song_pick">
-				<option value="./audio/You_Me.mp3"> Bassnectar - You and Me </option>
-				<option value="./audio/Cool_Kids.mp3"> Echosmith - Cool Kids   </option>
-				<option value="./audio/Illusion.mp3"> Zedd - Illusion </option>
-				<option value="./audio/Unsatisfied.mp3"> Nine Black Alps - Unsatisfied </option>
-				<option value="./audio/Touch.mp3"> Troye Sivan - Touch </option>
-			</select>
-			<button id="picker"> Pick </button>
-			<div>
-				<button onclick="document.getElementById('audioElement').play()">Play</button>
-				<button onclick="document.getElementById('audioElement').pause()">Pause</button>
-			</div>
-			<div id="song"></div>
       		</div>
       	    </div>
        </div>
